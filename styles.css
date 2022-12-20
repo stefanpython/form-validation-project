@@ -1,0 +1,109 @@
+input {
+  padding: 8px;
+  margin: 13px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+#submitBtn {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 20px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+button {
+  width: 100px;
+  background-color: aliceblue;
+  border: 1px dashed black;
+  border-radius: 5px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+input {
+  appearance: none;
+  border: 1px solid #333;
+  font-family: inherit;
+  font-size: 90%;
+  box-sizing: border-box;
+}
+
+/* This is our style for the invalid fields */
+input:invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+  width: 100%;
+  padding: 0;
+
+  font-size: 90%;
+  color: white;
+  background-color: #900;
+  border-radius: 2px 5px 5px 5px;
+
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+#emailContainer {
+  position: absolute;
+  margin-top: -308px;
+  margin-left: 117px;
+}
+
+#countryContainer {
+  position: absolute;
+  margin-top: -247px;
+  margin-left: 117px;
+}
+
+#zipcodeContainer {
+  position: absolute;
+  margin-top: -186px;
+  margin-left: 117px;
+}
+
+#passwordContainer {
+  position: absolute;
+  margin-left: 117px;
+  margin-top: -125px;
+}
+
+#confirmationContainer {
+  position: absolute;
+  margin-top: -64px;
+  margin-left: 117px;
+}
+
+#highfive {
+  display: none;
+}
+
+form {
+  border: 1px solid rgb(247, 188, 117);
+  max-width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  background: #403b4a; /* fallback for old browsers */
+  background: linear-gradient(to right, #e7e9bb, #403b4a);
+}

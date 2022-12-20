@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <br><br>
+    
+        <h3 id="highfive">Congratulations! You`ve completed the form with all the correct information.</h3>
+
+        <form action="" novalidate>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required minlength="8">
+        </div>
+            
+        <div>
+            <label for="country">Country: </label>
+            <input type="text" name="country" id="country" required pattern="[A-Za-z]{3,15}" minlength="3">  
+        </div>
+                
+        <div>
+            <label for="zipcode">Zip Code: </label>
+            <input type="text" name="zipcode" id="zipcode" required pattern="[0-9]{6,10}" minlength="6">
+        </div>
+          
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" required pattern="^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$" minlength="8">
+        </div>
+           
+        <div>
+            <label for="confirmation">Confirm Password: </label>
+            <input type="password" name="confirmation" id="confirmation" required minlength="8">
+        </div>
+            
+        <div id="submitBtn">
+            <button type="submit">Submit</button>
+        </div>
+
+        <!-- email display error-->
+        <div id="emailContainer">
+            <span class="error" aria-live="polite"></span>
+        </div>
+
+        <!-- country display error-->
+        <div id="countryContainer">
+            <span class="errorCountry" aria-live="polite"></span>
+        </div>
+
+        <!-- zipcode display error-->
+        <div id="zipcodeContainer">
+            <span class="errorZipcode" aria-live="polite"></span>
+        </div>
+
+        <!-- password display error-->
+        <div id="passwordContainer">
+            <span class="errorPassword" aria-live="polite"></span>
+        </div>
+
+        <!-- confirmation display error-->
+        <div id="confirmationContainer">
+            <span class="errorConfirmation" aria-live="polite"></span>
+        </div>
+        
+
+        </form>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
